@@ -7,7 +7,8 @@ if sys.executable != INTERP:
 	os.execl(INTERP, INTERP, *sys.argv)
 sys.path.append(os.getcwd())
 
-print(f"hello, executable is {sys.executable}")
+print("hello, executable is:")
+print(sys.executable)
 
 # sys.path.append('sample')
 from sample.app import app as application
