@@ -17,7 +17,8 @@ def hello():
 <h1>Sample Flask App</h1>
 
 <p>This is a flask app running in Passenger,
-inside Open OnDemand. Written by Dan.</p>
+inside Open OnDemand. Written by Dan.
+Its source is <a href="https://github.com/dtenenba/flask_passenger_wsgi_hello">here</a>.</p>
 
 <p>You can develop any kind of app and deploy it
 in OnDemand. </p>
