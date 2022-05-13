@@ -42,6 +42,7 @@ passenger (the main ones are Ruby, Python, and Node.js).</p>
      the output of the <code>whoami</code> command:</li>
      <b>{}</b>
 </li>
+</ul>
 
 <p>A word about Interactive apps - they can be written
 in any language, and instead of running on the
