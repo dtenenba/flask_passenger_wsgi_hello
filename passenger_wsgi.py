@@ -1,8 +1,13 @@
-# import sys, os
-# INTERP = os.path.join(os.environ['HOME'], 'myappname.domain.com', 'bin', 'python')
-# if sys.executable != INTERP:
-# 	os.execl(INTERP, INTERP, *sys.argv)
-# sys.path.append(os.getcwd())
+#!/usr/bin/python3
+
+
+import sys, os
+INTERP = '/usr/bin/python3'
+if sys.executable != INTERP:
+	os.execl(INTERP, INTERP, *sys.argv)
+sys.path.append(os.getcwd())
+
+print(f"hello, executable is {sys.executable}")
 
 # sys.path.append('sample')
 from sample.app import app as application
