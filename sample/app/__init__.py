@@ -64,6 +64,10 @@ as part of Open OnDemand) is the ability
 to open a virtual desktop on a cluster node
 inside your browser window. </p>
 
+<p>Note that Interactive apps require some software
+(Sockify, nmap-ncat, and TurboVNC) to be installed on all cluster nodes.
+Hopefully this should be a small addition to our chef recipes.</p>
+
 <p>I will create a demo of an Interactive app soon.</p>
 
 <p>Another thing that is sort of a hybrid of these two app types
