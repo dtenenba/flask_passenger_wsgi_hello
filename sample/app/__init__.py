@@ -59,7 +59,18 @@ they can be any X11 app. Magically using VNC these are
 proxied and presented in a web browser. 
 </p>
 
+<p>The main example of a Interactive app (which is shipped
+as part of Open OnDemand) is the ability
+to open a virtual desktop on a cluster node
+inside your browser window. </p>
+
 <p>I will create a demo of an Interactive app soon.</p>
+
+<p>Another thing that is sort of a hybrid of these two app types
+is the terminal shell. In Open OnDemand, click on the <code>Clusters</code> menu 
+and then click <code>parallelcluster shell access</code>. 
+You'll get a shell/terminal right in your browser window. 
+This shell is on the same machine as Open OnDemand. </p>
 
 </body>
 </html>
