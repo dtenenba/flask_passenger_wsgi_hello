@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
+import os
 
-import sh
 from flask import Flask
 app = Flask(__name__)
 
@@ -40,7 +40,7 @@ passenger (the main ones are Ruby, Python, and Node.js).</p>
     runs.</li>
 <li>This app is actually running as your user, not
      as <i>apache</i> or <i>www-data</i>. Here is
-     the output of the <code>whoami</code> command:</li>
+     the value  of the <code>USER</code> environment variable:</li>
      <b>{}</b>
 </li>
 </ul>
@@ -72,14 +72,14 @@ Hopefully this should be a small addition to our chef recipes.</p>
 
 <p>Another thing that is sort of a hybrid of these two app types
 is the terminal shell. In Open OnDemand, click on the <code>Clusters</code> menu 
-and then click <code>parallelcluster shell access</code>. 
+and then click <code>CLUSTER_NAME_PLACEHOLDER shell access</code>. 
 You'll get a shell/terminal right in your browser window. 
 This shell is on the same machine as Open OnDemand. </p>
 
 </body>
 </html>
     """
-    return message.format(sh.whoami().strip())
+    return message.format(os.getenv("USER").strip())
 
 if __name__ == "__main__":
     app.run()
